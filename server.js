@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 8000;
 
 // Middleware
 app.use(cors({
-  origin: '*', // <-- your frontend origin
+  origin: 'https://gym-management-frontend-production.up.railway.app', // <-- your frontend origin
   credentials: true
 }));
 app.use(bodyParser.json());
