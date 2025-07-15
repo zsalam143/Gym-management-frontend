@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 8000;
 // Middleware
 const allowedOrigins = [
   'http://localhost:3000',
-  'gym-management-production-e84d.up.railway.app'
+  'https://gym-management-production-e84d.up.railway.app'
 ];
 
 app.use(cors({
