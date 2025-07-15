@@ -9,15 +9,8 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 
 // Middleware
-const allowedOrigins = [
-  'http://localhost:3000',
-  'https://gym-management-production-e84d.up.railway.app',
-  'https://gym-management-production-e84d.up.railway.app/'
-];
-
 app.use(cors({
-  origin: allowedOrigins,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  origin: '*', // <-- your frontend origin
   credentials: true
 }));
 app.use(bodyParser.json());
